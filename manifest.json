@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Focus",
+    "version": "1.0",
+
+    "author" : "Ghassen Hizem",
+
+    "description" : "This is a testing extension made by me , it will allow me to focus on the task at hand without getting distracted by social media and all other distraction that the internet provides ",
+
+    "action": {
+      "default_popup": "index.html"
+    },
+
+ 
+    "content_scripts": [
+        {
+            "matches": ["*://*.facebook.com/*"],
+            "js": ["blocking.js"]
+        }
+    ]
+}
