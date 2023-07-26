@@ -10,7 +10,10 @@
     "action": {
       "default_popup": "index.html"
     },
-
+    "icons": {
+        "48": "icon48.png",
+        "96": "icon96.png"
+      },
  
     "content_scripts": [
         {
