@@ -20,5 +20,12 @@
             "matches": ["*://*.facebook.com/*"],
             "js": ["blocking.js"]
         }
-    ]
+    ],
+
+    "background": {
+        "scripts": ["background.js"],
+
+        "type": "module"
+      }
+      
 }
