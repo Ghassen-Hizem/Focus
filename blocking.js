@@ -1,5 +1,5 @@
-       alert("The Focus State is activated , You will be redirected to another page")
+alert("The Focus State is activated , You will be redirected to another page")
 
-    window.location.replace("https://www.google.com");
+window.location.replace("https://www.google.com");
 
 
