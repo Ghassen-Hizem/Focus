@@ -4,7 +4,7 @@ if(localStorage.getItem("Timer") == null) {
 let a;
 window.addEventListener("storage", () => {
 
- 
+  
     if(localStorage.getItem("State")=="Flow"){
         a = setInterval(()=> {
             localStorage.setItem("Timer", Number(localStorage.getItem("Timer"))+1);
@@ -15,3 +15,4 @@ window.addEventListener("storage", () => {
         a= null;
     }
   })
+
