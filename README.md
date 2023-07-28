@@ -1,13 +1,13 @@
 # Focus
 
-# Current State : 
-## Bugs :
-Working on keeping the countdown running in the background ! 
+## Description : 
+This is a web extension developed by me , it's a personal project that i created to avoid the distraction of social media when working 
+it's a simple extension with a running javaScript background code , that contains a countdown and a redirection logic whenever i try to distract myself from working by opening social media tabs 
 
-## Done So Far : 
-- UI correctly aligned
-- Counter formatted in Date format
-- When active , the counter works correctly
-- Websites are getting blocked and redirected by the URL matching , but the tab can't be totally closed by JS
+## Details : 
 
-  
+- This project contains an index.html with inline css using bootstrap 5 , it contains minimal css and a simple page because it's more about the idea and the logic than the UI
+- a manifest.json v2
+- a background.js file that contains the redirection logic
+
+
