@@ -1,6 +1,8 @@
+// Timer initializing
 if(localStorage.getItem("Timer") == null) {
     localStorage.setItem("Timer", 0);
 }
+//Background Countdown
 let a;
 window.addEventListener("storage", () => {
 
@@ -16,8 +18,7 @@ window.addEventListener("storage", () => {
     }
   })
 
-  let updating;
-
+ 
   function onUpdated(tab) {
     console.log(`Updated tab: ${tab.id}`);
   }
@@ -25,7 +26,8 @@ window.addEventListener("storage", () => {
   function onError(error) {
     console.log(`Error: ${error}`);
   }
-  
+  //logic for redirection on social media tabs
+
  function handleCreated(tabID,changeinfo,tab) {
    // console.log(tab.url);
    if((tab.url == "https://www.facebook.com/") || (tab.url == "https://www.instagram.com/")){
@@ -41,6 +43,6 @@ window.addEventListener("storage", () => {
    }
   }
 
-
+//event for opening a new tab 
  browser.tabs.onUpdated.addListener(handleCreated);
 
