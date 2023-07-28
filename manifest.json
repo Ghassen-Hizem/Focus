@@ -15,16 +15,9 @@
         "48": "icon48.png",
         "96": "icon96.png"
       },
- 
-    "content_scripts": [
-        {
-            "matches": ["*://*.facebook.com/*","*://*.instagram.com/*","*://*.linkedin.com/*"],
-            "js": ["blocking.js"]
-        }
-    ],
-
     "permissions": [
-      "storage"
+      "storage",
+      "tabs"
   ],
   
 
